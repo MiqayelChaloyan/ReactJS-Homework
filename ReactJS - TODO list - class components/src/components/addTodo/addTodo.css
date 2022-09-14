@@ -1,0 +1,30 @@
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-input {
+    width: 86%;
+    height: 33px;
+    font-size: 18px;
+}
+
+.btn-add {
+    width: 80px;
+    height: 50px;
+    border: none;
+    font-size: 25px;
+    border-radius: 14px;
+    background-color: #1a91db;
+    color: white;
+}
+
+.input-form{
+    display: flex;
+    align-items: center;
+}
+
+.input-append{
+    margin: 0 26px;
+}

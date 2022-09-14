@@ -1,0 +1,20 @@
+.btn-delete{
+    background: red;
+    border: none;
+    width: 100px;
+    height: 34px;
+    margin-left: 158px;
+    border-radius: 5px;
+}
+
+/* .checkbox-input{
+    margin: 15px;
+} */
+
+.checkbox{
+    margin: 12px;
+}
+
+.button-del{
+    margin: 17px;
+}

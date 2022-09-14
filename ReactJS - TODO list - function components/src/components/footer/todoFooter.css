@@ -1,0 +1,19 @@
+.footer{
+    width: 96.2%;
+    height: 30px;
+    background-color: #0f3e2f3b;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 12px;
+    box-shadow:0 1px 8px -1px #000000ed;
+}
+
+.clear{
+    border: 0;
+    cursor: pointer;
+    padding: 5px 6px;
+    box-shadow: 2px 1px 6px -2px #000000ed;
+    border-radius: 5px;
+}
