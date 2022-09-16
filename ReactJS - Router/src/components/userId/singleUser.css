@@ -1,0 +1,22 @@
+.list{
+    width: 40%;
+    text-align: center;
+    margin: 40px 40px;
+}
+
+.last-name{
+    border: 1px solid black;
+    height: 50px;
+}
+
+.user-email{
+    border: 1px solid black;
+    height: 50px;
+    font-size: 29px;
+}
+
+.user-id{
+    border: 1px solid black;
+    height: 50px;
+    font-size: 29px;
+}

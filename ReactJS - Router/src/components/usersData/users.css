@@ -1,0 +1,19 @@
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+.users-list{
+    width: 30%;
+    margin: 20px 30px;
+}
+
+.user{
+    border: 1px solid #00b3ff;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    padding: 8px 10px;
+    margin: 3px 0;
+    background: #00000029;
+}
