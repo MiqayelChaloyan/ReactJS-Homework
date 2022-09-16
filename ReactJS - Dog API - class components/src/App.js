@@ -68,9 +68,9 @@ const BASE_URL = "https://dog.ceo/api/breed/";
             <option value={e}> {e} </option>
           )}
         </select>
-        <button className="button" id="submit" disabled={!select} onClick={this.getDogImage}>submit</button>
+        <button className="button" id="submit" disabled={!select} onClick={this.getDogImage}>Submit</button>
         <div id="img">
-          <img className="doggy_img" alt="dog" src={imgURL} />
+          <img className="doggy_img" alt="dog" style={{display: !imgURL ? "none" : "block"}} src={imgURL} />
         </div>
       </div>
     )

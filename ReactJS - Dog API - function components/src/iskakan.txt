@@ -1,0 +1,56 @@
+import './App.css';
+import { useState, useEffect } from 'react'
+
+function App() {
+  const [imgURL, setImgURL] = useState('');
+  const [breed, setBreed] = useState(['']);
+  const [select, setSelect] = useState('');
+
+  const BASE_URL = "https://dog.ceo/api/breed/";
+
+  useEffect(() => {
+    fetch("https://dog.ceo/api/breeds/list")
+      .then(resp => resp.json())
+      .then(data => {
+        setBreed(data.message )
+        console.log(data.message)
+      })
+      .catch(err => {
+        console.log("error fetching list");
+      });
+  }, [])
+
+
+ const getDogImage = () => {
+    let url = BASE_URL + select + "/images/random";
+    fetch(url)
+      .then(resp => resp.json())
+      .then(data => {
+        setImgURL(data.message)
+        console.log(data.message)
+      })
+      .catch(err => {
+        console.log("error fetching image");
+      });
+  };
+
+  const handleSelect = (event) => {
+    setSelect(event.target.value)
+  }
+
+  return (
+    <div className="App">
+       <select className="select" value={select} onChange={handleSelect}>
+          {breed.map(e =>
+            <option value={e}> {e} </option>
+          )}
+        </select>
+        <button className="button"  disabled={!select} onClick={getDogImage}>Submit</button>
+        <div id="img">
+          <img className="doggy_img" alt="dog" style={{display: !imgURL ? "none" : "block"}} src={imgURL} />
+        </div>
+    </div>
+  );
+}
+
+export default App;
