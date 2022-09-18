@@ -1,0 +1,16 @@
+.todo-item{
+    width: 270px;
+}
+
+.btn-filter{
+    width: 23%;
+    height: 34px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin: 9px;
+    background-color: aquamarine;
+    box-shadow: 5px 5px 10px -1px #0000004f;
+    color: aliceblue;
+    cursor: pointer;
+}

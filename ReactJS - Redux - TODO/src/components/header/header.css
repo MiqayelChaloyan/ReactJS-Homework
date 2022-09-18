@@ -1,0 +1,41 @@
+.add-form {
+    display: flex;
+    width: 371px;
+    justify-content: space-between;
+    background: #9c9c9cb8;
+    align-items: center;
+    padding: 15px;
+}
+
+.add-btn{
+    width: 24%;
+    height: 34px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin: 6px;
+    background-color: #1ec08a;
+    box-shadow: 5px 5px 10px -1px #0000004f;
+    color: aliceblue;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.add-todo{
+    width: 65%;
+    height: 40px;
+    font-size: 24px;
+    font-family: system-ui;
+    padding: 4px;
+}
+
+.select-color{
+    width: 40%;
+    height: 40px;
+    font-size: 21px;
+    margin: 24px 93px;
+    box-shadow: 5px 3px 14px 1px #00000040;
+    border: 1px solid black;
+    font-family: system-ui;
+    padding: 1px 5px;
+}
